@@ -15,7 +15,7 @@ const db = require('./models/index')
 const Role = db.role
 
 db.mongoose
-    .connect(`mongodb://${dbConfig.HOST}:${dbConfig.POST}/${dbConfig.DB}`,{
+    .connect(`mongodb://${dbConfig.HOST}:${dbConfig.PORT}/${dbConfig.DB}`,{
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
